@@ -1,5 +1,7 @@
 {
   "name": "help_track",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
