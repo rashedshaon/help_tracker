@@ -57,8 +57,8 @@
     <div *ngIf="block == 2">
       <ion-row class="ion-align-items-center mt20">
         <ion-col size="10">
-          <ion-input placeholder="{{'email'|translate}}" type="text" [(ngModel)]="user.email"></ion-input>
-          <ion-input class="mt10" placeholder="{{'password'|translate}}" type="password" [(ngModel)]="user.password"></ion-input>
+          <ion-input placeholder="{{'email'|translate}}" type="text"></ion-input>
+          <ion-input class="mt10" placeholder="{{'password'|translate}}" type="password"></ion-input>
           <ion-button class="mt20" expand="block" color="success" (click)="signIn()">
             {{'login'|translate}}
           </ion-button>
