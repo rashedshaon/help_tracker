@@ -16,6 +16,10 @@ const routes: Routes = [
     path: 'settings',
     loadChildren: () => import('./pages/settings/settings.module').then( m => m.SettingsPageModule)
   },
+  {
+    path: 'campaign-create',
+    loadChildren: () => import('./pages/campaign-create/campaign-create.module').then( m => m.CampaignCreatePageModule)
+  },
 ];
 
 @NgModule({
