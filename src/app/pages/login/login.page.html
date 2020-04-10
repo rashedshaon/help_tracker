@@ -1,9 +1,76 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <ion-grid>
 
+    <ion-row class="ion-align-items-center mt30">
+      <ion-col size="auto">
+        <img class="logo" src="/assets/logo.png" alt="Help Tracker Logo">
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-align-items-center">
+      <ion-col size="auto">
+        <p>HELP TRACKER</p>
+      </ion-col>
+    </ion-row>
+
+    <div *ngIf="block == 1">
+      <ion-row class="ion-align-items-center mt20">
+        <ion-col size="10">
+          <ion-button expand="block" color="success" (click)="emailLogin()">
+            <ion-icon name="mail-outline"></ion-icon> &nbsp;
+            {{'login_with_email'|translate}}
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-align-items-center mt20 bt">
+        <ion-col size="auto">
+          {{'or'|translate}}
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="10">
+          <ion-button expand="block" color="primary">
+            <ion-icon name="logo-facebook"></ion-icon> &nbsp;
+            {{'login_facebook'|translate}}
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="10">
+          <ion-button expand="block" color="danger">
+            <ion-icon name="logo-google"></ion-icon> &nbsp;
+            {{'login_google'|translate}}
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-align-items-center mt20">
+        <ion-col size="auto">
+          <ion-button fill="clear" expand="block" color="primary" (click)="changeLanguage()">
+            <ion-icon name="sync-outline"></ion-icon> &nbsp;
+            {{ 'tag_full' | translate }}
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <!-- login form -->
+    <div *ngIf="block == 2">
+      <ion-row class="ion-align-items-center mt20">
+        <ion-col size="10">
+          <ion-input placeholder="{{'email'|translate}}" type="text" [(ngModel)]="user.email"></ion-input>
+          <ion-input class="mt10" placeholder="{{'password'|translate}}" type="password" [(ngModel)]="user.password"></ion-input>
+          <ion-button class="mt20" expand="block" color="success" (click)="signIn()">
+            {{'login'|translate}}
+          </ion-button>
+          <ion-button fill="clear" expand="block" color="medium" (click)="othersLogin()">
+            {{'login_with_others'|translate}}
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+    
+
+
+
+  </ion-grid>
 </ion-content>

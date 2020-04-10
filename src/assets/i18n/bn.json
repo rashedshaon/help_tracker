@@ -1,0 +1,22 @@
+{
+    "tag": "bn",
+    "tag_short": "E",
+    "tag_full": "English",
+    "off": "বন্ধ",
+    "to": "থেকে",
+    "Saturday": "শনিবার",
+    "Sunday": "রবিবার",
+    "Monday": "সোমবার",
+    "Tuesday": "মঙ্গলবার",
+    "Wednesday": "বুধবার",
+    "Thursday": "বৃহস্পতিবার",
+    "Friday": "শুক্রবার",
+    "login_with_email": "ইমেইল দিয়ে লগইন",
+    "or": "অথবা",
+    "login_facebook": "ফেসবুক দিয়ে লগইন",
+    "login_google": "গুগল দিয়ে লগইন",
+    "login": "লগইন করুন",
+    "login_with_others": "অন্য ভাবে লগইন করুন",
+    "email": "ইমেইল",
+    "password": "পাসওয়ার্ড"
+}

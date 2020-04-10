@@ -1,0 +1,22 @@
+{
+    "tag": "en",
+    "tag_short": "B",
+    "tag_full": "বাংলা",
+    "off": "Off",
+    "to": "to",
+    "Saturday": "Saturday",
+    "Sunday": "Sunday",
+    "Monday": "Monday",
+    "Tuesday": "Tuesday",
+    "Wednesday": "Wedday",
+    "Thursday": "Thursday",
+    "Friday": "Friday",
+    "login_with_email": "Login with Email",
+    "or": "OR",
+    "login_facebook": "Login Facebook",
+    "login_google": "Login Google",
+    "login": "Login",
+    "login_with_others": "Login with others",
+    "email": "Email",
+    "password": "Password"
+}

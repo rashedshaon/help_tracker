@@ -20,6 +20,10 @@ const routes: Routes = [
     path: 'campaign-create',
     loadChildren: () => import('./pages/campaign-create/campaign-create.module').then( m => m.CampaignCreatePageModule)
   },
+  {
+    path: 'beneficiary-create',
+    loadChildren: () => import('./pages/beneficiary-create/beneficiary-create.module').then( m => m.BeneficiaryCreatePageModule)
+  },
 ];
 
 @NgModule({
